@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.NET Ticks to Date in Javascript</title>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="How to converter the DateTime C# .NET class in ticks to date class in Javascript.">
+        <meta name="keywords" content="DateTime,NET,CSharp,JavaScript,Date">
+        <meta name="author" content="Eduard Bicego">
+        
+        <script type="text/javascript" src="converter-script.js"></script>
+    </head>
+
+    <body>
+    
+        <div>
+            <p> Number of tick: </p>
+            <input type="number" id="input" value="0">
+
+            <p id="output">Your output: <span id="result"></span></p>
+        </div>
+
+        <input type="button" value="Convert!" onclick="convertInJs()">
+        
+        <div id="description">
+        
+            <p>C# .NET save the date from 1th January year 0  that is 0 tick</p>
+            <p>Javascript save the date as unix from 1th January 1970 that is 0 tick in javascript and 621355968000000000 ticks for .NET</p>
+            <p>So .NET save in a different start data and use milliseconds so we need to do two operation for convert in Javascript tick date</p>
+            <p>The formula for convert C# ticks (csDateToConverter) to Javascript ticks (jsTicks) is: "jsTicks = (csTicksToconvert - csUnixStartDateTicks) / ticksPerMillisecond"</p>
+            <p>Then you can use "new Date(jsTicks) for get the date in human readable language</p>
+            
+        </div>
+    
+    </body>
+
+</html>
