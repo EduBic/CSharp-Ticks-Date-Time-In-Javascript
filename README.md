@@ -9,4 +9,7 @@ So .NET save in a different start data and use milliseconds so we need to do two
 
 The formula for convert C# ticks (csDateToConverter) to Javascript ticks (jsTicks) is: **"jsTicks = (csTicksToconvert - csUnixStartDateTicks) / ticksPerMillisecond"**.
 
-Then you can use **"new Date(jsTicks)"** for get the date in human readable language
+Then you can use **"new Date(jsTicks)"** for get the date in human readable language.
+
+
+Here a demo: http://jsfiddle.net/zalun/Yazpj/1/
