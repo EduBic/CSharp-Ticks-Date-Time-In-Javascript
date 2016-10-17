@@ -1,4 +1,4 @@
-# CSharp-Ticks-Date-Time-In-Javascript
+# CSharp Ticks Date Time In Javascript
 How to converter the DateTime C# .NET class in ticks to date class in Javascript.
 
 C# .NET save the date from **1th January year 0** that is **0 tick**.
